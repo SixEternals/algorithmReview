@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/vscF/lanqiao/build/easy",
+  "command": "D:\\TOOLS\\mingw_v11\\mingw_new\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\app.dir\\review.cpp.obj -c D:\\vscF\\lanqiao\\easy\\review.cpp",
+  "file": "D:/vscF/lanqiao/easy/review.cpp",
+  "output": "easy/CMakeFiles/app.dir/review.cpp.obj"
+},
+{
+  "directory": "D:/vscF/lanqiao/build/normal",
+  "command": "D:\\TOOLS\\mingw_v11\\mingw_new\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\app2.dir\\1oddstring.cpp.obj -c D:\\vscF\\lanqiao\\normal\\1oddstring.cpp",
+  "file": "D:/vscF/lanqiao/normal/1oddstring.cpp",
+  "output": "normal/CMakeFiles/app2.dir/1oddstring.cpp.obj"
+}
+]
