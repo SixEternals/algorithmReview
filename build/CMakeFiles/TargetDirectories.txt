@@ -1,8 +1,0 @@
-D:/vscF/lanqiao/build/CMakeFiles/edit_cache.dir
-D:/vscF/lanqiao/build/CMakeFiles/rebuild_cache.dir
-D:/vscF/lanqiao/build/easy/CMakeFiles/app.dir
-D:/vscF/lanqiao/build/easy/CMakeFiles/edit_cache.dir
-D:/vscF/lanqiao/build/easy/CMakeFiles/rebuild_cache.dir
-D:/vscF/lanqiao/build/normal/CMakeFiles/app2.dir
-D:/vscF/lanqiao/build/normal/CMakeFiles/edit_cache.dir
-D:/vscF/lanqiao/build/normal/CMakeFiles/rebuild_cache.dir
