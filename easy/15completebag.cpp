@@ -13,11 +13,9 @@ int main(int argc, char const *argv[])
 
     for (int i = 1; i <= N; ++i)
         for (int j = 1; j <= V; ++j)
-            for (int k = 0; k * w[i] <= j; ++k) // 这里不能写k <= V / v[i]
-            {
+            for (int k = 0; k * w[i] <= j; ++k) // 这里不能写k <= V / v[i] 过了两小时之后的吐嘈：这不废话吗 v是价值啊 看来是坐在水客教室里焖傻了
                 dp[i][j] = max(dp[i][j], dp[i - 1][j - k * w[i]] + k * v[i]);
-                // cout << dp[i][j] << " ";
-            }
+
     cout << dp[N][V];
 
     // cout << "\ncheck" << endl;

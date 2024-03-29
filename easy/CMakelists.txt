@@ -1,2 +1,2 @@
-add_executable(app 17bracketdp.cpp)
+add_executable(app 18triangledp.cpp)
 set_target_properties(app PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
