@@ -1,2 +1,2 @@
-add_executable(app 15completebag.cpp)
+add_executable(app 16chicken.cpp)
 set_target_properties(app PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
