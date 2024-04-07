@@ -1,0 +1,1 @@
+add_executable(appdp 1splitsubs.cpp)
