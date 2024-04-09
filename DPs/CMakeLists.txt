@@ -1,1 +1,1 @@
-add_executable(appdp 1_stepAtLeast.cpp)
+add_executable(appdp 4_splitInteger.cpp)
