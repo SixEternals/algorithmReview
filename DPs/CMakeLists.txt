@@ -1,1 +1,1 @@
-add_executable(appdp 1splitsubs.cpp)
+add_executable(appdp 1_stepAtLeast.cpp)
