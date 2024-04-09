@@ -63,10 +63,12 @@ public:
         // evaluation: dp[i] = max(dp[i] ,j * dp[i-j])
         for (int i = 3; i <= n; ++i)
             for (int j = 1; j <= i / 2 + 1; ++j) // 枚举到i的一半就可以了
-                dp[i] = max(dp[i], j * dp[i - j]);
+                dp[i] = max(dp[i], max(j * (i - j), j * dp[i - j]));
+        // dp[i] = max(dp[i], j * dp[i - j]);
         // print
-        for (int i = 1; i <= n; ++i)
-            cout << dp[i] << " ";
+        // for (int i = 1; i <= n; ++i)
+        //     cout
+        //         << dp[i] << " ";
         return dp[n];
     }
 };

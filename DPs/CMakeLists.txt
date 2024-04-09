@@ -1,1 +1,1 @@
-add_executable(appdp 4_splitInteger.cpp)
+add_executable(appdp 7_lastRock.cpp)
