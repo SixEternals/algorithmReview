@@ -41,19 +41,57 @@ using namespace std;
 class Solution
 {
 public:
+    using LL = long long;
+    // 这个是我的ac代码
     int minSubArrayLen(int target, vector<int> &nums)
     {
-        sort(nums.begin(), nums.end());
-        int slow = 0;
-        for (int fast = 0; fast < nums.size(); ++fast)
+        int t = 0;
+        for (int i = 0; i < nums.size(); i++)
+            t += nums[i];
+        if (t < target)
+            return 0;
+        LL sum = 0;
+        int len = 0;
+        int res = 0x3f3f3f3f;
+        int fast = 0, slow = 0;
+        int n = nums.size();
+        while (fast < n)
         {
+            sum += nums[fast++];
+            len++;
+            while (sum >= target)
+            {
+                sum -= nums[slow++];
+                res = min(res, len);
+                len--;
+            }
         }
+        return res;
+    }
+    int sub(int target, vector<int> &nums)
+    { // 这个是代码随思路的
+        // ...
+        LL sum{0};
+        int res = __INT32_MAX__;
+        int slow = 0;
+        int len = 0;
+        for (int fast = 0; fast < nums.size(); fast++)
+        {
+            sum += nums[fast];
+            while (sum >= target)
+            {
+                int curlen = fast - slow + 1; // here
+                res = min(res, curlen);
+                sum -= nums[slow++];
+            }
+        }
+        return res == __INT32_MAX__ ? res : 0; // here
     }
 };
 int main(int argc, char const *argv[])
 {
-    vector<int> nums = {2, 3, 1, 2, 4, 3};
+    vector<int> nums = {1, 1, 1, 1, 1, 1, 1, 1};
     Solution instance;
-    instance.minSubArrayLen(7, nums);
+    cout << instance.minSubArrayLen(11, nums);
     return 0;
 }

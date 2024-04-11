@@ -1,1 +1,1 @@
-add_executable(apparr 6_minLengthArr.cpp)
+add_executable(apparr 7_fruit.cpp)
