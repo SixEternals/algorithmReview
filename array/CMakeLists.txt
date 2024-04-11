@@ -1,1 +1,1 @@
-add_executable(apparr 4_strWithBack.cpp)
+add_executable(apparr 6_minLengthArr.cpp)
