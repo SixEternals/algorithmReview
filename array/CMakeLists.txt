@@ -1,0 +1,1 @@
+add_executable(apparr 6_minLengthArr.cpp)
