@@ -11,7 +11,6 @@
 输入：n = 1
 输出：[[1]]
 
-
 提示：
 1 <= n <= 20
 */
@@ -23,7 +22,29 @@ class Solution
 public:
     vector<vector<int>> generateMatrix(int n)
     {
-        
+        vector<vector<int>> res(n, vector<int>(n));
+        int startx = 0, starty = 0;
+        int loop = n / 2, mid = n / 2;
+        int count = 1;
+        int offset = 1;
+        int i, j;
+        while (loop--)
+        {
+            i = startx, j = starty;
+            for (j; j < n - offset; ++j)
+                res[i][j] = count++;
+            for (i; i < n - offset; ++i)
+                res[i][j] = count++;
+            for (j; j > starty; --j)
+                res[i][j] = count++;
+            for (i; i > startx; --i)
+                res[i][j] = count++;
+            // increment
+            startx++, starty++, offset++;
+        }
+        if (n % 2 == 1)
+            res[mid][mid] = n * n;
+        return res;
     }
 };
 int main(int argc, char const *argv[])
